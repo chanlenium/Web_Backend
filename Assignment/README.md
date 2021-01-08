@@ -23,7 +23,7 @@
 >* Content Section - combination of grids, words, headings, and images (This section must display at least four (4) top meal packages)
 >* Footer - include footer menu items, social media links, and any other information
 <img src="C:\Users\k\Pictures\home.jpg" alt="Markdown Monster icon" style="float: left; margin-right: 10px;" />
-     
+<img src="https://www.w3schools.com/images/picture.jpg">
 ### Meals Package
 >* This page must have at least 4 sample meal packages within a 4 column grid layout
 >* Every meal package have an image, title, price, food category, number of meals in the package and a boolean attribute indicating if it is a top package or not 
