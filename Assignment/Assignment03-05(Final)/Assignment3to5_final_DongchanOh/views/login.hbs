@@ -1,0 +1,42 @@
+{{#if data.isRegistered}}
+<script> alert("You're already registered!!"); </script> 
+{{/if}}
+
+<div class="container">
+  <div class="row">
+    <col-md-12>
+      <div class="innter-form">
+        <form class="sa-innate-form" action="/login" method="post">
+          <label>Email Address</label>
+          <input type="text" name="emailaddress" value="{{data.userInput.emailaddress}}"
+            placeholder="Enter email address">
+          {{#if data.errorMsg.emailaddress}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.emailaddress}}
+          </div>
+          {{/if}}
+          </br>
+          <label>Password</label>
+          <input type="password" name="password" value="{{data.userInput.password}}" placeholder="Enter password">
+          {{#if data.errorMsg.password}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.password}}
+          </div>
+          {{/if}}
+          </br>
+          <button type="submit">Sign In</button>
+          <a href="">Forgot Password?</a>
+        </form>
+      </div>
+      <div class="social-login">
+        <p>- - - - - - - - - - - - - Sign In With - - - - - - - - - - - - - </p>
+        <ul>
+          <li><a href=""><i class="fa fa-facebook-official"></i> Facebook</a></li>
+          <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+          <li><a href=""><i class="fa fa-twitter-square"></i> Twitter</a></li>
+        </ul>
+      </div>
+    </col-md-12>
+  </div>
+</div>
+</br>

@@ -1,0 +1,91 @@
+<div class="container">
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row">
+            <div class="col-md-7">
+                <div class="ibox">
+                    {{#each cart}}
+                    <div class="ibox-title">
+                        <h5>Items in your cart</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="table-responsive">
+                            <table class="table shoping-cart-table">
+                                <tbody>
+                                    <tr>
+                                        <td width="90">
+                                            <div class="cart-product-imitation" style="padding:0">
+                                                <img src="/photos/{{fileName}}"
+                                                    style="width: 90px; object-fit: contain">
+                                            </div>
+                                        </td>
+                                        <td class="desc">
+                                            <p style="color:rgb(41, 41, 165);font-size:22px;font-weight:bold;">{{title}}
+                                            </p>
+                                            <dl class="small m-b-none">
+                                                <dt>Description</dt>
+                                                <dd>Price per unit : ${{prodPrice}}</dd>
+                                                <dd>Number of Order : {{noOfOrders}}</dd>
+                                            </dl>
+                                        </td>
+                                        <td>
+                                            <h4>
+                                                ${{subTotal}}
+                                            </h4>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    {{else}}
+                    <tr>
+                        <h3 colspan="5" style="font-size:22px;font-weight:bold">No Items in my Cart</h3>
+                    </tr>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col-md-5">
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <h5>Cart Summary</h5>
+                    </div>
+                    <div class="ibox-content">
+                        <span>
+                            Total
+                        </span>
+                        <h2 class="font-bold">
+                            {{priceTotal}}
+                        </h2>
+
+                        <hr>
+                        <span class="text-muted small">
+                            *For South Korea, Canada, and United States applicable sales tax will be applied
+                        </span>
+                        <div class="m-t-sm">
+                            <div class="ibox-content">
+                                <form action="/orderCompleted" method="post">
+                                    <button class="btn btn-primary pull-right"><i class="fa fa-shopping-cart"></i> Place your orders</button>
+                                </form>
+                                <a href="/mealspackage">
+                                    <button class="btn btn-white"><i class="fa fa-arrow-left"></i>Continue shopping</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ibox">
+                    <div class="ibox-title">
+                        <h5>Support</h5>
+                    </div>
+                    <div class="ibox-content text-center">
+                        <h3><i class="fa fa-phone"></i> +1 100 100 1001</h3>
+                        <span class="small">
+                            Please contact with us if you have any questions. We are avalible 24h.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+<div class="container">
+  <div class="row">
+    <col-md-12>
+      <img class="img-responsive" src="/photos/mealpackage_image.JPG" />
+      <div class="centered">
+        <p style="font-family: tangerine; font-size:8vw;">Our Meals Package</p>
+      </div>
+    </col-md-12>
+  </div>
+
+  </br>
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 style="text-align: center;">
+        Pick a package, choose your meals, achive your goal!
+      </h1>
+      <h2 style="border-bottom-style: solid; border-color: gray;
+                        border-bottom-width: 1.5px; text-align: center;">
+        It's that easy!
+      </h2>
+    </div>
+  </div>
+  <div class="row">
+    {{#each data}}
+    <div class="col-md-3">
+      <div class="work-box" style="margin-top:30px;margin-bottom:20px;height:500px;overflow-y:auto;">
+        <div class="work-box-image">
+          <form action="/detail/{{filename}}" method="post">
+            <button name="mealDetail" value="submit">
+              <img src="/photos/{{filename}}" alt="mealDetail" class="img-fluid">
+            </button>
+          </form>
+          {{!-- <img src="/photos/{{filename}}" class="img-fluid" /> --}}
+        </div>
+        <div class="work-box-content text-center" style="margin-top: 10px">
+          <h4>
+            {{title}}
+            {{#if isTopMealPackage}}
+            <sup style="color:red"><i class="fa fa-thumbs-up"></i>Top</sup>
+            {{else}}
+            {{/if}}
+          </h4>
+          <p>Price: ${{price}}</p>
+          <p>Category: {{category}}</p>
+          <p>{{noOfMeals}} meals</p>
+          <p>{{content}}</p>
+        </div>
+      </div>
+    </div>
+    {{else}}
+    <tr>
+      <td colspan="5">No Data Available</td>
+    </tr>
+    {{/each}}
+  </div>
+</div>
+</br>

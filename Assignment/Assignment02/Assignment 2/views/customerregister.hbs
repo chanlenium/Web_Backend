@@ -1,0 +1,62 @@
+<div class="container">
+  <div class="row">
+    <col-md-12>
+      <div class="innter-form">
+        <form class="sa-innate-form" action="/customerregister" method="post">
+          <label for="userfname">First Name</label>
+          <input type="text" name="fname" value="{{data.userInput.fname}}" placeholder="Type user first name">
+          {{#if data.errorMsg.fname}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.fname}}
+          </div>
+          {{/if}}
+          </br>
+          <label for="userlname">Last Name</label>
+          <input type="text" name="lname" value="{{data.userInput.lname}}" placeholder="Type user last name">
+          {{#if data.errorMsg.lname}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.lname}}
+          </div>
+          {{/if}}
+          </br>
+          <label for="useremail">Email Address</label>
+          <input type="text" name="emailaddress" value="{{data.userInput.emailaddress}}"
+            placeholder="Type user email address">
+          {{#if data.errorMsg.emailaddress}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.emailaddress}}
+          </div>
+          {{/if}}
+          </br>
+          <label for="userpassword">Password</label>
+          <input type="password" name="password" value="{{data.userInput.password}}" placeholder="Type password">
+          {{#if data.errorMsg.password}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.password}}
+          </div>
+          {{/if}}
+          </br>
+          <label for="userpassword">Confirm Password</label>
+          <input type="password" name="password2" value="{{data.userInput.password2}}"
+            placeholder="Type password once again">
+          {{#if data.errorMsg.password2}}
+          <div class="my-feedback" style="color:red; margin-top:5px">
+            <strong>Warning:</strong>{{data.errorMsg.password2}}
+          </div>
+          {{/if}}
+          </br>
+          <button type="submit">Join now</button>
+        </form>
+        <div class="social-login">
+          <p>- - - - - - - - - - - - - Register With - - - - - - - - - - - - - </p>
+          <ul>
+            <li><a href=""><i class="fa fa-facebook-official"></i> Facebook</a></li>
+            <li><a href=""><i class="fa fa-google-plus"></i> Google+</a></li>
+            <li><a href=""><i class="fa fa-twitter-square"></i> Twitter</a></li>
+          </ul>
+        </div>
+      </div>
+    </col-md-12>
+  </div>
+</div>
+</br>

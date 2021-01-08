@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Add User - Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div style="text-align: center">
+    <h3>Add User - Registe</h3>
+  </div>
+
+
+  <div style="width:400px;border:1px dashed #6495de;padding:16px;">
+    <form action="/add-user" method="POST">
+      <table>
+        <tr>
+          <td>
+            <label for="username">Username</label>
+          </td>
+          <td>
+            <input id="username" name="username" type="text" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="email">Email</label>
+          </td>
+          <td>
+            <input id="email" name="email" type="text" /><br />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="password">Password</label>
+          </td>
+          <td>
+            <input id="password" name="password" type="password" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="fullName">Full Name</label>
+          </td>
+          <td>
+            <input id="fullName" name="fullName" type="text" />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            &nbsp;
+          </td>
+          <td>
+            <input type="submit" value="Add User" />
+          </td>
+        </tr>
+    </form>
+  </div>
+</body>
+
+</html>

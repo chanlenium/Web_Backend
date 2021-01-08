@@ -1,0 +1,108 @@
+<div class="container">
+    <div class="row">
+        <col-md-12>
+            <img class="img-responsive" src="/images/main_image.JPG">
+            <div class="centered">
+                <br><br><br><br><br>
+                <p style="font-family: tangerine; font-size: 8vw; color: white; text-align: center;">Meals and grocery
+                </p>
+                <p style="font-family: tangerine; font-size: 5vw; color: white; text-align: center;">Delivered</p>
+            </div>
+        </col-md-12>
+    </div>
+
+    </br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h1 style="text-align: center;">No cooking, just eating</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+            <div class="work-box">
+                <div class="work-box-image">
+                    <img src="https://cdn.shopify.com/s/files/1/1758/4293/files/Pick_1.gif?14089"
+                        class="img-fluid image-animated" />
+                </div>
+                <div class="work-box-content text-center" style="margin-top: 10px">
+                    <h4>Pick</h4>
+                    <p>100+ menu of all-natural dishes.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="work-box">
+                <div class="work-box-image">
+                    <img src="https://cdn.shopify.com/s/files/1/1758/4293/files/heat.gif?14089"
+                        class="img-fluid image-animated" />
+                </div>
+                <div class="work-box-content text-center" style="margin-top: 10px">
+                    <h4>Heat</h4>
+                    <p>Cooked &amp; delivered.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="work-box">
+                <div class="work-box-image">
+                    <img src="https://cdn.shopify.com/s/files/1/1758/4293/files/eat_1_1.gif?14089"
+                        class="img-fluid image-animated" />
+                </div>
+                <div class="work-box-content text-center" style="margin-top: 10px">
+                    <h4>Eat</h4>
+                    <p>Delicious &amp; nutritious.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="work-box">
+                <div class="work-box-image">
+                    <img src="https://cdn.shopify.com/s/files/1/1758/4293/files/repeat---Copy.gif?14095"
+                        class="img-fluid image-animated" />
+                </div>
+                <div class="work-box-content text-center" style="margin-top: 10px">
+                    <h4>Repeat</h4>
+                    <p>Skip a week or cancel any time.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </br>
+
+    <div class="row">
+        <div class="col-md-12">
+            <div id="top-meal-pakages-intro" class="top-meal-packages-title text-center"
+                style="margin: 50px 20px 20px 20px">
+                <h1>Our chefs are making these right now!!</h1>
+                <p>You could be chowing down on these meals any time you choose</p>
+                <p>
+                    Orders some (or all) of these meals and see why thousands of Canadians
+                    stock us in their fridge!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        {{#each data}}
+        <div class="col-md-3">
+            <div class="work-box">
+                <div class="work-box-image">
+                    <img src="/images/top-meals/{{Title}}.jpg" class="img-fluid" />
+                </div>
+                <div class="work-box-content text-center" style="margin-top: 10px">
+                    <h4>{{Title}}</h4>
+                    <p></p>
+                    <p>CAD {{Price}}</p>
+                </div>
+            </div>
+        </div>
+        {{else}}
+        <tr>
+            <td colspan="5">No Data Available</td>
+        </tr>
+        {{/each}}
+    </div>
+</div>
+</br>

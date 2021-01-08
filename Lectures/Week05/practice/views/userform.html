@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="post" action="/userform">
+        <table style="border: 1px dashed #cdcdcd;padding:6px;">
+          <tbody>
+            <tr>
+              <td>
+                <label for="username">Choose a username:</label>
+              </td>
+              <td>
+                <input  style="width:100%" id="username" type="text" placeholder="A Username you'd like to use" />
+              </td>
+            </tr>
+            <tr>
+              <td><label for="email">Your Email:</label></td>
+              <td><input style="width:100%" id="email" type="text" placeholder="Email address" />
+                <tr>
+                  <td><label for="name">Your Name:</label></td>
+                  <td><input style="width:100%" id="name" type="text" placeholder="Your name" /></td>
+                </tr>
+                <tr>
+                  <td><label for="password">Your Password:</label></td>
+                  <td><input style="width:100%" id="password" type="password" /></td>
+                </tr>
+                <tr>
+                  <td><label for="passwordconfirm">Confirm Password:</label></td>
+                  <td><input style="width:100%" id="passwordconfirm" type="password" /></td>
+                </tr>
+                <tr>
+                  <td colspan="2">
+                    <p><em>Would you like to subscribe to our monthly newsletter?</em><br />
+                      <input id="yes" type="radio" name="newsletter" value="yes" /><label for="yes">Yes</label><br/>
+                      <input id="no" type="radio" name="newsletter" value="no" /><label for="no">No</label>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="2"><input type="submit" value="Submit" /> (using a regular input element to submit)</td>
+                </tr>
+                <tr>
+                  <td colspan="2"><button type="submit">Submit</button> (using a button element to submit)</td>
+                </tr>
+          </tbody>
+        </table>
+    </form>
+</body>
+</html>

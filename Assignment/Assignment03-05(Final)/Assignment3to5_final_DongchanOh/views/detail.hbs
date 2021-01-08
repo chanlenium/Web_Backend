@@ -1,0 +1,45 @@
+<div class="container bootdey">
+    <div class="col-md-12">
+        <section class="panel">
+            <form action="/add-to-cart" method="post">
+                <div class="col-md-6">
+                    <div class="pro-img-details">
+                        <img src="/photos/{{data.userInput.filename}}" alt="">
+                        <input type="hidden" class="form-control" id="fileName" name="fileName"
+                            value="{{data.userInput.filename}}">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h4 class="pro-d-title">
+                        <strong>{{data.userInput.title}}</strong>
+                        <input type="hidden" class="form-control" id="title" name="title"
+                            value="{{data.userInput.title}}">
+                    </h4>
+                    <p>
+                        {{data.userInput.content}}
+                    </p>
+                    <div class="product_meta">
+                        <p><strong>Categories : </strong> {{data.userInput.category}}</p>
+                    </div>
+                    <div class="m-bot15">
+                        <p><strong>Price : </strong> {{data.userInput.price}}
+                            <input type="hidden" class="form-control" id="prodPrice" name="prodPrice"
+                                value="{{data.userInput.price}}">
+                        </p>
+                        <p><strong>No of Meals within the package : </strong> {{data.userInput.noOfMeals}}
+                        </p>
+                        <p><strong>Quantity : </strong>
+                            <input type="number" class="form-control" id="noOfOrders" name="noOfOrders" min="1" max="20"
+                                step="1" value="1" required>
+                        </p>
+                        <p>
+                            <button class="btn btn-round btn-danger" name="addToCart" value="submit">
+                                <i class="fa fa-shopping-cart"> Add to Cart</i>
+                            </button>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </div>
+</div>

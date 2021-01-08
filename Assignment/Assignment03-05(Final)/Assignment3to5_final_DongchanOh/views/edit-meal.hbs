@@ -1,0 +1,79 @@
+<div class="container">
+  <div style="text-align: center">
+    <h3>Add a meal package to the database</h3>
+  </div>
+  
+  <div>
+    <form class="form-horizontal" action="/edit-meal" method="POST">
+      <div class="form-group">
+        <label for="title" class="col-sm-2 control-label">Title</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="title" name="title" value="{{data.userInput.title}}" placeholder="Meal Package Title" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="price" class="col-sm-2 control-label">Price</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="price" name="price" value="{{data.userInput.price}}" placeholder="Price" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="category" class="col-sm-2 control-label">Category</label>
+        <div class="col-sm-10">
+          <select name="category" id="category" required>
+              <option value="" disabled selected hidden>Choose a category</option>
+              <option value="Western">Western</option>
+              <option value="Eastern">Eastern</option>
+            </select>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="noOfMeals" class="col-sm-2 control-label">Number of Meals</label>
+        <div class="col-sm-10">
+          <input type="number" class="form-control" id="noOfMeals" name="noOfMeals" min="1" max="20" step="1" value="{{data.userInput.noOfMeals}}" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="isTopMealPackage" class="col-sm-2 control-label">Is this Top Meal?</label>
+        <div class="col-sm-10">
+          <fieldset>
+            {{#if data.userInput.isTopMealPackage}}
+              <label for="yesTop">Yes</label>
+              <input type="radio" name="topOrNot" id="yesTop" value="yesTop" checked><br>
+              <label for="noTop">No</label>
+              <input type="radio" name="topOrNot" id="noTop" value="noTop"><br>
+            {{else}}
+              <label for="yesTop">Yes</label>
+              <input type="radio" name="topOrNot" id="yesTop" value="yesTop"><br>
+              <label for="noTop">No</label>
+              <input type="radio" name="topOrNot" id="noTop" value="noTop" checked><br>
+            {{/if}}
+          </fieldset>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="content" class="col-sm-2 control-label">Description</label>
+        <div class="col-sm-10">
+          <textarea class="form-control" id="content" name="content" cols="30" rows="10" required>{{#if data.userInput.content}}{{data.userInput.content}}{{else}}Input description{{/if}}</textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="fileName" class="col-sm-2 control-label"></label>
+        <div class="col-sm-10">
+          <input type="hidden" class="form-control" id="fileName" name="fileName" value="{{data.userInput.filename}}">
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+          <input type="submit" class="btn btn-default" value="Edit File" style="background-color: #008CBA; color:white">
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

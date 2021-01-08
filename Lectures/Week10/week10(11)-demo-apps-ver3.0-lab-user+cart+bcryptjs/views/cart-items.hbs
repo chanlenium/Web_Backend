@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Shopping Cart</title>
+</head>
+
+<body>
+  <h3>Hello {{user.username}}</h3>
+  <p>This is the Shopping Cart page for showing all item on your shopping cart, <mark>Only the user with role "customer" can access this page!</mark></p>
+  <p>Here is the information we have on file for you:</p>
+  <h4>username: </h4>
+  <h4>email: {{user.email}}</h4>
+  <h4>role: {{user.role}}</h4>
+  <a href="/logout">Logout</a><hr>
+  
+
+  <h3>Cart Items</h3>
+  <table border='1'>
+    <tr>
+        <th>Item</th>
+        <th>quantity</th>
+        <th>Price</th>
+    </tr>
+    {{#each user.cart.items}}
+        <tr>
+            <td>{{item}}</td>
+            <td>{{quantity}}</td>
+            <td>{{price}}</td>
+        </tr>
+    {{else}}
+        <tr>
+            <td colspan="4">Cart is empty</td>
+        </tr>
+    {{/each}}
+</table>
+<p>Total:</p>
+<p><a href="/order">Place Order</a></p>
+</body>
+
+</html>

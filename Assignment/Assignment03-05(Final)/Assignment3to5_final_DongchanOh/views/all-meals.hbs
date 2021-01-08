@@ -1,0 +1,49 @@
+<div style="text-align: center">
+  <h3>My Meal Package Lists</h3>
+</div>
+
+<div>
+  <a href="/add-meal" class="button" style="background-color: #4CAF50; color:white; padding: 10px 15px">Add new Meal Package</a>
+</div>
+
+<div class="container bootstrap snippets bootdey">
+  <div class="row">
+    {{#if hasMeals }} {{#each meals}}
+    <div class="col-sm-4">
+      <div class="tile purple" style="height:500px;overflow-y:auto;">
+        <h3 class="title" style="margin-top: 0px;">{{title}}</h3>        
+        <p>Price: {{price}}</p>
+        <p>Category: {{category}}</p>
+        <p>Number of Meals: {{noOfMeals}}</p>
+        <p>TopMeals: {{isTopMealPackage}}</p>
+        <div>
+          <img src="./photos/{{filename}}" style="width:100%;" />
+        </div>
+        <div class="caption">Description: {{content}}</div>
+        <div class="upload-date"><i>Uploaded: {{uploadDate}}</i></div>
+        
+        <div class="row">
+          <div class="col-md-2">
+            <div class="remove" title="Remove meal">
+              <form action="/remove-meal/{{filename}}" method="post">
+                <button type="submit"><img src="/trash_can.png" /></button>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <div class="edit" title="Edit meal">
+              <form action="/edit-meal/{{filename}}" method="post">
+                <button type="submit"><img src="/edit.jpg" /></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}} {{else}}
+    <p>
+      You have no meal package uploaded yet
+    </p>
+    {{/if}}
+  </div>
+</div>

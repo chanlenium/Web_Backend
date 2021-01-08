@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Data Entry</title>
+</head>
+
+<body>
+  <h3>Hello {{user.username}}</h3>
+  <p>This is the Data Entry page for creating meal packages, <mark>ONly daya entry clerk can access this page!</mark></p>
+  <p>Here is the information we have on file for you:</p>
+  <h4>username: </h4>
+  <h4>email: {{user.email}}</h4>
+  <h4>role: {{user.role}}</h4>
+  <a href="/logout">Logout</a>
+</body>
+
+</html>

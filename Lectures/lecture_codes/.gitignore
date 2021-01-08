@@ -1,0 +1,4 @@
+**/node_modules
+**/package-lock.json
+**/week12-assets/server.crt
+**/week12-assets/server.key

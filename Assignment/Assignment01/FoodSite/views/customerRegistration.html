@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/server-data.js"></script>
+
+    <!-- <link
+      href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.8/css/all.css"
+    />
+    <link rel="stylesheet" href="/style.css" type="text/css" /> -->
+  </head>
+  <body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <header>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <img
+            src="//cdn.shopify.com/s/files/1/1758/4293/files/livefitlogo_205x@2x.png?v=1540534332"
+            alt="Logo"
+            style="width: 40px"
+          />
+        </a>
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              Home
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Hero Section</a>
+              <a class="dropdown-item" href="#">Content Section</a>
+              <a class="dropdown-item" href="#">Top Meal Packages</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Meals Package</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Registration</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+        </ul>
+      </nav>
+      <br />
+    </header>
+    <br>
+    <div class="container">
+      <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px">
+          <h4 class="card-title mt-3 text-center">Create Account</h4>
+          <p class="text-center">Get started with your free account</p>
+          <p>
+            <a href="" class="btn btn-block btn-twitter">
+              <i class="fab fa-twitter-square fa-2x"></i>   Login via Twitter</a
+            >
+            <a href="" class="btn btn-block btn-facebook">
+              <i class="fab fa-facebook-f fa-2x"></i>   Login via facebook</a
+            >
+            <a href="" class="btn btn-block btn-google">
+              <i class="fab fa-google-plus-g fa-2x"></i>   Login via google</a
+            >
+          </p>
+          <p class="divider-text">
+            <span class="bg-light">OR</span>
+          </p>
+          <form>
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-user"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Full name"
+                type="text"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Email address"
+                type="email"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-phone"></i>
+                </span>
+              </div>
+              <select class="custom-select" style="max-width: 120px">
+                <option selected="">+647</option>
+                <option value="1">+647</option>
+                <option value="2">+416</option>
+              </select>
+              <input
+                name=""
+                class="form-control"
+                placeholder="Phone number"
+                type="text"
+              />
+            </div>
+            <!-- form-group end.// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Create password"
+                type="password"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+              <input
+                class="form-control"
+                placeholder="Repeat password"
+                type="password"
+              />
+            </div>
+            <!-- form-group// -->
+            <div class="form-group">
+              <button type="submit" class="btn btn-primary btn-block">
+                Create Account
+              </button>
+            </div>
+            <!-- form-group// -->
+            <p class="text-center">Have an account? <a href="">Log In</a></p>
+          </form>
+        </article>
+      </div>
+      <!-- card.// -->
+    </div>
+    <!--container end.//-->
+    <div class="footer">
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+      <a href="#" class="fa fa-google"></a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <h3>Hello {{user.username}}</h3>
+  <p>Welcome to your dashboard</p>
+  <p>Here is the information we have on file for you:</p>
+  <h4>username: {{user.username}}</h4>
+  <h4>email: {{user.email}}</h4>
+  <a href="/logout">Logout</a>
+
+
+  <h2>Links in this demo app</h2>
+  <ul>
+    <li><a href="/add-user">Add User (register)</a></li>
+    <li><a href="/form-validation">Form with validation (register)</a></li>
+    <li><a href="/cart-items">Shopping cart items </a>(for user with "customer" role )</li>
+    <li><a href="data-entry">Data Entry</a>(creating meal package, for user with "dataEntry" role</li>
+    <li><a href="/add-to-cart">Add item to shopping cart</a></li>
+
+  </ul>
+
+</body>
+
+</html>

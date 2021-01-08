@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Data</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Index</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Occupation</th>
+            <th>Company</th>
+        </tr>
+        {{#each data}}
+            <tr>
+                <td>{{@index}}</td>
+                <th>{{name}}</th>
+                <th>{{age}}</th>
+                <th>{{occupation}}</th>
+                <th>{{company}}</th>
+            </tr>
+        {{else}}
+            <tr>
+                <td colspan="4">No data Available</td>
+            </tr>
+        {{/each}}
+
+        {{#list data}}
+            Name: {{name}}
+            Age: {{age}} 
+            Occupation: {{occupation}} 
+            Company: {{company}}
+        {{/list}}
+    </table>
+</body>
+</html>
