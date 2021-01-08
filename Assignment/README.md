@@ -22,7 +22,8 @@
 >* Hero Section- have a prominent image element that is placed at the top of pages below the header and navigation section
 >* Content Section - combination of grids, words, headings, and images (This section must display at least four (4) top meal packages)
 >* Footer - include footer menu items, social media links, and any other information
-     
+![Kitten](/readmeImage/home.JPG "A cute kitten")
+
 ### Meals Package
 >* This page must have at least 4 sample meal packages within a 4 column grid layout
 >* Every meal package have an image, title, price, food category, number of meals in the package and a boolean attribute indicating if it is a top package or not 
