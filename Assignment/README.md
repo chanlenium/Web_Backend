@@ -2,10 +2,10 @@
 [Heroku webpage link](https://evening-badlands-62985.herokuapp.com/)
 
 ## Object
-* Implement web site using server-driven web applications using JavaScript with Node.js and Express.js
-* Make database using Cloud server (i.e., MongoDB Atlas) and link the database with web site
-* Implement Server-Side validation for both the login and registration form
-* Encrypt `userID` and `password` to protect user information from malicious attacks
+>* Implement web site using server-driven web applications using JavaScript with Node.js and Express.js
+>* Make database using Cloud server (i.e., MongoDB Atlas) and link the database with web site
+>* Implement Server-Side validation for both the login and registration form
+>* Encrypt `userID` and `password` to protect user information from malicious attacks
 
 ## Homepage configuration
 >* Home
