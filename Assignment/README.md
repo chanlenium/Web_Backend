@@ -8,7 +8,7 @@
 * Encrypt `userID` and `password` to protect user information from malicious attacks
 
 ##Homepage configuration
->*Home
+*>Home
 >*Meals Package
 >*About
 >*Registration
