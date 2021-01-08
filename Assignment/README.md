@@ -23,6 +23,7 @@
 >* Content Section - combination of grids, words, headings, and images (This section must display at least four (4) top meal packages)
 >* Footer - include footer menu items, social media links, and any other information
 <img src="C:\Users\k\Pictures\home.JPG" alt="Markdown Monster icon" style="float: left; margin-right: 10px;" />
+
 ![Kitten](/Users/k/Pictures/home.JPG "A cute kitten")
      
 ### Meals Package
