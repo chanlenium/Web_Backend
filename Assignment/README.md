@@ -13,7 +13,7 @@
 >* About
 >* Registration
 >* Login
->* My cart (visible to at Login user only)
+>* My cart (visible to Login user only)
 >* My meals (visible to Data entry clerk only)
 
 ### Home
@@ -40,7 +40,7 @@
 >* Check for nulls 
 ![](readmeImage/login.JPG "login")
 
-### My cart (visible to at Login user only)
+### My cart (visible to Login user only)
 >* Have a link to the logged-in user shopping cart
 >* Display all the meal packages that were added to the shopping cart and how much of each package was added for the given user
 
