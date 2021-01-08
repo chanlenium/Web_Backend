@@ -27,18 +27,26 @@
 ### Meals Package
 >* This page must have at least 4 sample meal packages within a 4 column grid layout
 >* Every meal package have an image, title, price, food category, number of meals in the package and a boolean attribute indicating if it is a top package or not 
+![](readmeImage/mealpackages.JPG "mealpackages")
+
 ### Registration
 >* Implement Server-Side validation for the registration form
 >* Check for nulls and implement complex validation criteria using regular expressions
 >* When a user fills out the registration form and then hits the submit button, provided that all the validation criteria were not violated, your website must then send a welcome email message to the user’s email address and then redirect the user to an about page. 
+![](readmeImage/registration.JPG "registration")
+
 ### Login
 >* Implement Server-Side validation for the login form
 >* Check for nulls 
+![](readmeImage/login.JPG "login")
+
 ### My cart (visible to at Login user only)
 >* Have a link to the logged-in user shopping cart
 >* Display all the meal packages that were added to the shopping cart and how much of each package was added for the given user
+
 ### My meals (visible to Data entry clerk only)
 >* Data Entry Clerk Module
 >* Able to add and edit new meal packages to the database
 >* View a list of all created meal packages
 >* All created meal packages that were entered into the database are populated on the front-end of the web application
+![](readmeImage/mymeals.JPG "my meals")
